@@ -35,10 +35,11 @@
 - **프리젠터**: *어댑터*와 *컴포너트* 사이를 매핑한다.
 - **컴포넌트**: 표현 계층에서 가장 간단한 부분으로, 모든 매핑과 변환은 *프리젠터* 에서 끝났어야한다.
 
-## Sample apps DEMO
-Talk is cheap, don't you think? That's why I'm sharing two sample apps to facilitate your digestion.  
-A great advantage of following clean architecture is having all business logic self-contained and closer, in a readable way.  
-Take a look at `core/entities/` and `core/useCases/` folders and see for yourself.
+## 데모 어플리케이션
+말은 쉽지, 그렇지 않나? 그게 내가 독자들이 이 글을 쉽게 소화할 수 있도록 두개의 샘플 앱을 공유하는 이유이다.  
+다음의 클린 아키텍쳐의 최고의 이점은 모든 비즈니스 로직이 읽기 쉽고, 가까우며 스스로를 담고 있다는 것이다.
+`core/entities/` 부분과 `core/useCases/` 폴더를 한번 살펴보자.  
+
 ### Counter
 The counter app is a simple example of how to apply clean architecture to react world, it uses only synchronous actions and has no external dependencies.  
 It contains 2 use case rules:
