@@ -15,14 +15,14 @@
 필자는 클린 아키텍쳐가 무엇인지, 왜 써야하고 어떻게 써야하는것인지에 대한 세개의 글을 작성하려고 한다.
 포르투갈어의 리엑트 코드베이스에 클린아키텍쳐를 적용하는 글은 [여기](https://medium.com/@eduardomoroni/arquitetura-limpa-para-bases-de-c%C3%B3digo-react-df0f78d2b42e)
 
-## Philosophy
+## 철학
 ![high-level-diagram](https://github.com/eduardomoroni/react-clean-architecture/blob/master/docs/images/high-level-diagram.jpg)  
 
-The nomenclature may vary, but the concept behind this architectural pattern is: the domain dictates how tools should be organized and not the other way around.
-What I mean by that is that we should organize our codebase around the business rules and not around the frameworks we use to achieve business rules.
-The diagram above shows how the dependency rule works, the inner circles must not know about the outer circles. That is, there cannot be an import of a use case within an entity, or import of a framework within a use case.
-Another important rule is: entities and use cases should not rely on external libraries. The explanation is simple, the core of our application must be robust enough and malleable enough to meet the demands of the business without needing any external intervention.
-If by chance, an essential part of the application core MUST BE an external dependency. Dependency needs to be modeled following [dependency inversion principle](https://en.wikipedia.org/wiki/Dependency_inversion_principle).
+이름을 짓는 방법은 다양할 수 있겠지만, 이 아키텍쳐 패턴의 주요 개념은 "도메인은 도구들이 어떻게 구성되어야하는지 지시하며 그 반대의 방향으로는 작용하지 않는다" 이다.  
+그게 무슨뜻이냐면, 우리는 우리의 코드베이스를 비즈니스 룰을 바탕으로 구성해야 맞지 우리가 비즈니스 룰을 구성하는데 필요한 프레임워크를 바탕으로 구성하면 안된다는 것이다.  
+위 그림은 종속성 규칙이 어떻게 작동하는지 보여주며, 원 내부는 원 외부를 알아서는 안된다. 그것은, 유즈케이스는 엔티티 안에서 임포트되면 안되며, 유즈케이스 안에서 프레임워크를 임포트해도 안된다는 것이다. 
+또 다른 중요한 규칙은, 엔티티와 유즈케이스들은 외부 라이브러리에 의존하면 안된다는 것이다. 이것에 대한 설명은 간단한데, 우리 어플리케이션의 코어는 어떠한 외부 간섭도 없이 비즈니스 니즈를 충족시킬만큼 간단하면서 튼튼해야하기 때문이다.
+만약 우연히, 우리의 어플리케이션 코어 부분에 외부 종속성(라이브러리 등)이 반드시 포함되어야한다면, 그 종속성은 다음을 따라서 구성되어야 한다.[종속성 반전 원칙](https://en.wikipedia.org/wiki/Dependency_inversion_principle).
 
 ## Communication flow
 ![communication-flow-diagram](https://github.com/eduardomoroni/react-clean-architecture/blob/master/docs/images/communication-flow.jpg)  
