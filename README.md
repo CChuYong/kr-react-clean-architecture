@@ -40,24 +40,24 @@
 다음의 클린 아키텍쳐의 최고의 이점은 모든 비즈니스 로직이 읽기 쉽고, 가까우며 스스로를 담고 있다는 것이다.
 `core/entities/` 부분과 `core/useCases/` 폴더를 한번 살펴보자.  
 
-### Counter
-The counter app is a simple example of how to apply clean architecture to react world, it uses only synchronous actions and has no external dependencies.  
-It contains 2 use case rules:
-- The count must not be negative.
-- The count must not be greater than 10.  
+### 카운터
+카운터 앱은 리액트 세계에 클린 아키텍처를 적용하는 간단한 예시인데, 이는 단순히 동기적인 작업을 사용하며 외부 종속성(라이브러리)를 사용하지 않는다.
+이는 2개의 유즈케이스 규칙을 포함한다:
+- 카운터는 음수일 수 없다.
+- 카운터는 10보다 클 수 없다
 
 ![counter-gif](https://github.com/eduardomoroni/react-clean-architecture/blob/master/docs/images/counter.gif)  
 
 ---  
 
-### Authentication
-An authentication app is a simple example, but not that simple, of how to apply clean architecture to a realistic scenario.
-It contains some shared business rules:
-- Users must have a valid email.
-- Users password must comprises only numbers and/or letters.
-- Users name must have a full name, and it must to be lowercased.
-- The App cannot sign up two users with the same email address.
-- The App must use an external dependency to persist user register.  
+### 인증
+인증 앱은 간단한 예시이지만, 그렇게 간단하지는 않은데, 실제적인 시나리오에서 클린 아키텍쳐를 적용하는 방법을 포함한다.
+이는 몇개의 공유된 비즈니스 규칙을 포함한다:
+- 유저는 올바른 이메일 주소를 가져야 한다.
+- 유저의 패스워드는 숫자 혹은 문자로만 구성되어야 한다
+- 유저는 풀네임을 가지고 있어야 하며, 소문자화 돼서는 안된다.
+- 같은 이메일 주소에서 두명 이상의 유저가 가입할 수 없다.
+- 앱은 유저의 가입을 처리하기 위해 외부 종속성을 사용해야 한다.
 
 ![authentication-gif](https://github.com/eduardomoroni/react-clean-architecture/blob/master/docs/images/authentication.gif)  
 
