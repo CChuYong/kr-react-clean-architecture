@@ -1,15 +1,14 @@
-## Word of advice
-This is an example repo, I wouldn't do exactly like this in production. I am just share one way this could be done, may not be the best, but it's a realistic way. I Recommend looking for other implementations as well to complement your research. The repo is also a bit outdated and many conventions have changed over time.
+## 조언의 말
+이 레포지토리는 예시이며, 필자는 프로덕션 레벨에서 이것과 완전히 같게 구현하지 않는다. 필자는 이렇게도 할 수 있다는 한가지 방법을 공유할뿐, 최선의 방법은 아닐수도 있으며, 하지만 실제적인 방법이다. 필자는 독자들이 연구를 완료하기 위해 다른 구현 방법들도 둘러보길 권장한다. 이 레포지토리는 또한 조금 오래되었고, 시간이 지남에 따라 많은 전통을 가지고 있다.
 
-### Examples (please create a PR adding any other example you have)
+### 예시 (PR을 제출해 또다른 예시를 제출해보라)
 - https://github.com/bespoyasov/frontend-clean-architecture
 
-# React Clean Architecture
-Applying clean architecture to a react codebase brings lots of benefits, most of them you can find by simply googling what's clean architecture and what should we adopt architectural patterns.
-One advantage that strikes me is having business rules isolated from framework-specific things. This means that our core logic is not coupled to React, React Native, Express, etc...  
-This gives you enough flexibility to, for example, move specific parts of the application to a backend, change libraries without too much pain, test once and reuse as many times as you want, share code between React and React Native applications, among others.   
-This is a realistic approach, what I mean by that is: It's simple enough to be applicable and Robust enough to have it in a production environment.
-Although I have greatly simplified it, for educational purposes, I believe that this example is of great value to get you started with applying architectural patterns and adapting them to your own needs.    
+# 리액트 클린 아키텍쳐
+리액트 코드베이스에 클린 아키텍쳐를 적용하는것은 많은 이점을 가져오는데, 그 이점들의 대부분은 독자들이 구글에 "클린 아키텍쳐의 개념"과 "어떤 아키텍쳐 패턴을 결합해야하는가"를 검색함으로써 찾을 수 있다. 하나의 이점 중 필자를 감명깊게 한 부분은 "비즈니스 규칙을 프레임워크-특정적인것에서 격리시킬 수 있다"는 것이다. 이는 우리의 코어 로직이 리액트 프레임워크에 종속적이지 않은것을 의미한다. (리엑트 네이티브나, 익스프레스,, 기타등등)
+이는 독자들에게 충분한 유연성을 주는데, 예를 들어 어플리케이션의 특정 부분을 백엔드 파트로 이전한다거나, 라이브러리 교체를 큰 고통 없이 해내거나, 테스트를 한번 해보고 독자들이 원하는 만큼 재사용하거나, 코드를 리액트뿐만 아니라 리액트 네이티브 사이에서 공유한다거나..
+이것은 현실적인 접근이다. 무슨말이냐면, 이는 프로덕션 레벨에서 적용할 수 있을정도로 단순하면서도 견고하다.
+물론 필자는 교육 목적을 위해 최대한 단순화했기에, 이 글이 독자들에게 아키텍쳐 패턴을 적용하고 독자들의 필요에 맞게 적용하는데 큰 역할을 했으면 한다.
 
 ## Detailed explanation
 I've been pretty busy lately, so I'll write as much as possible.  
