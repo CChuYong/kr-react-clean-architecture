@@ -24,16 +24,16 @@
 또 다른 중요한 규칙은, 엔티티와 유즈케이스들은 외부 라이브러리에 의존하면 안된다는 것이다. 이것에 대한 설명은 간단한데, 우리 어플리케이션의 코어는 어떠한 외부 간섭도 없이 비즈니스 니즈를 충족시킬만큼 간단하면서 튼튼해야하기 때문이다.
 만약 우연히, 우리의 어플리케이션 코어 부분에 외부 종속성(라이브러리 등)이 반드시 포함되어야한다면, 그 종속성은 다음을 따라서 구성되어야 한다.[종속성 반전 원칙](https://en.wikipedia.org/wiki/Dependency_inversion_principle).
 
-## Communication flow
+## 데이터의 흐름
 ![communication-flow-diagram](https://github.com/eduardomoroni/react-clean-architecture/blob/master/docs/images/communication-flow.jpg)  
+(순서대로 각 엔티티, 인터렉터, 어댑터, 프리젠터, 컴포넌트, 프레임워크로 번역합니다.)
 
-### A brief explanation of each responsibility
-- **Entity**: Application independent business rules
-- **Interactor**: Application-specific business rules
-- **Adapter**: Glue code from/to *Interactors* and *Presenter*, most of the time implementing a framework-specific behaviour.
-  e. g.: We have to connect *Interactor* with react container, to do so, we have to connect *Interactor* with redux (framework) and then connect redux to container components.
-- **Presenter**: Maps data from/to *Adapter* to/from *Components*.
-- **Components**: Simplest possible unit of presentation. Any mapping, conversion, MUST be done by the *Presenter*.
+### 각자의 책임에 관한 짧은 설명
+- **엔티티**: 어플리케이션을 의존하지 않는 비즈니스 규칙  
+- **인터렉터**: 어플리케이션-종속적인 비즈니스 규칙  
+- **어댑터**: *인터렉터* 와 *프리젠터* 사이를 연결해주는 것으로, 대부분의 경우 프레임워크-종속적인 행위를 구현한다. 예를 들어) 우리가 리엑트 컨테이너와 통신하는 인터렉터를 만들어야한다면, 우리는 인터렉터를 리덕스(프레임워크)와 연결해야하고, 그리고 리덕스를 컨테이너 컴포넌트와 연결해야한다.
+- **프리젠터**: *어댑터*와 *컴포너트* 사이를 매핑한다.
+- **컴포넌트**: 표현 계층에서 가장 간단한 부분으로, 모든 매핑과 변환은 *프리젠터* 에서 끝났어야한다.
 
 ## Sample apps DEMO
 Talk is cheap, don't you think? That's why I'm sharing two sample apps to facilitate your digestion.  
