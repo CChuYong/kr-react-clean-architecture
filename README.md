@@ -63,8 +63,8 @@
 
 ---  
 
-## Folder Structure
-This repository contains 2 examples of how to implement react following clean architecture, represented by the [diagram](#philosophy) above, and both follow the same folder structure:
+## 폴더 구조
+이 레포지토리는 클린 아키텍쳐를 따르는 리액트 구현 예시 두가지를 포함하고 있는데, [다이어그램](#philosophy) 을 통해 나타나고, 둘 모두 다음과 같은 폴더 구조를 따른다. 
 ```
 ./counter
 ├── core
@@ -84,25 +84,25 @@ This repository contains 2 examples of how to implement react following clean ar
         ├── components
         └── stylesheets
 ```
-*Note:* the `frameworks` folder comprises framework-specific setups to have it available to the adapters.  
+*메모:* `framework` 폴더는 프레임워크-종속적인 설정들을 어댑터에 사용 가능하도록 구성해둔 폴더이다.  
 
-## Running the apps
-run `npm install` under the project you'd like to run, and then run `npm start`.
+## 어플리케이션 실행하기
+프로젝트 폴더위에서 `npm install` 를 실행하고 나서, `npm start` 를 실행하면 된다.
 
-### Running on Windows
+### 마이크로소프트 윈도우에서 실행하기
 
-There's an [issue](https://github.com/eduardomoroni/react-clean-architecture/issues/2) related to how yarn/npm symlink file dependencies on windows. Due to this issue, you should first go under the `core` module and run `npm install` and `npm run build`. This will make the `core` module ready to be installed on the other modules.
+이 프로젝트에는 [이슈](https://github.com/eduardomoroni/react-clean-architecture/issues/2) 가 존재하는데 윈도우에서 yarn/npm이 파일 종속성을 위한 심볼릭 링크를 제대로 생성하지 못한다. 이 이슈때문에, 독자는 먼저 `core` 모듈에 가서 `npm install` 를 실행한 후 `npm run build` 를 실행해야 한다. 이것은 `core` 모듈이 다른 모듈에 설치되도록 준비하게 할 것이다.
 
-## References
+## 참조
 - [Clean Architecture: a craftsman's guide to software structure and design](https://goo.gl/2h3fsD)
 - [The clean architecture](https://8thlight.com/blog/uncle-bob/2012/08/13/the-clean-architecture.html)
 - [Agility and Architecture](https://www.youtube.com/watch?v=0oGpWmS0aYQ)
 - [Github](https://github.com/topics/clean-architecture?o=desc&s=stars)
 - [Presentational and Container Components](https://medium.com/@dan_abramov/smart-and-dumb-components-7ca2f9a7c7d0)
 
-## Thanks
-- Microsoft: for providing a [typescript react native starter kit](https://github.com/Microsoft/TypeScript-React-Native-Starter).
-- [Will Monk](https://github.com/wmonk): for providing a [react typescript starter kit](https://github.com/wmonk/create-react-app-typescript) .
+## 감사하는 말
+- 마이크로소프트: 다음의 제공: [typescript react native starter kit](https://github.com/Microsoft/TypeScript-React-Native-Starter).
+- [Will Monk](https://github.com/wmonk): 다음의 제공: [react typescript starter kit](https://github.com/wmonk/create-react-app-typescript) .
 
-## Feedback
-If something looks odd, don't hesitate to reach me out or opening an issue.
+## 피드백
+뭔가 이상해보인다면, 이슈를 만들어 바로 필자에게 알려주라.  
